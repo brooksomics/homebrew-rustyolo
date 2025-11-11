@@ -4,22 +4,22 @@ Homebrew tap for [rustyolo](https://github.com/brooksomics/llm-rustyolo), a secu
 
 ## Installation
 
-\`\`\`bash
+```bash
 brew tap brooksomics/rustyolo
 brew install rustyolo
-\`\`\`
+```
 
 Or install directly:
 
-\`\`\`bash
+```bash
 brew install brooksomics/rustyolo/rustyolo
-\`\`\`
+```
 
 ## Updating
 
-\`\`\`bash
+```bash
 brew upgrade rustyolo
-\`\`\`
+```
 
 ## Usage
 
