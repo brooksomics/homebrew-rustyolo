@@ -10,17 +10,17 @@ class Rustyolo < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.1.1/rustyolo-x86_64-apple-darwin.tar.gz"
+      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.2.0/rustyolo-x86_64-apple-darwin.tar.gz"
       sha256 ""  # Calculate with: shasum -a 256 rustyolo-x86_64-apple-darwin.tar.gz
     elsif Hardware::CPU.arm?
-      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.1.1/rustyolo-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.2.0/rustyolo-aarch64-apple-darwin.tar.gz"
       sha256 ""  # Calculate with: shasum -a 256 rustyolo-aarch64-apple-darwin.tar.gz
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.1.1/rustyolo-x86_64-unknown-linux-gnu.tar.gz"
+      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.2.0/rustyolo-x86_64-unknown-linux-gnu.tar.gz"
       sha256 ""  # Calculate with: shasum -a 256 rustyolo-x86_64-unknown-linux-gnu.tar.gz
     end
   end
