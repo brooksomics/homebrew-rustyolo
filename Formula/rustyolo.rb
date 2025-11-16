@@ -5,23 +5,23 @@
 class Rustyolo < Formula
   desc "Secure, firewalled wrapper for running AI agents in YOLO mode"
   homepage "https://github.com/brooksomics/llm-rustyolo"
-  version "0.3.0"  # Update this when creating new releases
+  version "0.3.1"  # Update this when creating new releases
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.2.0/rustyolo-x86_64-apple-darwin.tar.gz"
-      sha256 "cb6d6c3cdd67d6e8c0851d7834458d452c6a2132f83b686c6ed99906ca60cf7d"  # Calculate with: shasum -a 256 rustyolo-x86_64-apple-darwin.tar.gz
+      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.3.1/rustyolo-x86_64-apple-darwin.tar.gz"
+      sha256 "sha256:036cd605572256345e85c4c47b89ee8e997d979f98a2af7bf5e9af9d8f55f447"  # Calculate with: shasum -a 256 rustyolo-x86_64-apple-darwin.tar.gz
     elsif Hardware::CPU.arm?
-      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.2.0/rustyolo-aarch64-apple-darwin.tar.gz"
-      sha256 "6338a814cf00f486cdb4be739e0627a574534e59d80f8d769f64b33986b988d3"  # Calculate with: shasum -a 256 rustyolo-aarch64-apple-darwin.tar.gz
+      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.3.1/rustyolo-aarch64-apple-darwin.tar.gz"
+      sha256 "sha256:6b9204a636551d5baa85106784358ddc79636b32d114f1f241ef42a5a97d8029"  # Calculate with: shasum -a 256 rustyolo-aarch64-apple-darwin.tar.gz
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.2.0/rustyolo-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "sha256:f1d712c327987194c6271e0408cfa88e480bec2063d0816232252e109afed1a5"  # Calculate with: shasum -a 256 rustyolo-x86_64-unknown-linux-gnu.tar.gz
+      url "https://github.com/brooksomics/llm-rustyolo/releases/download/v0.3.1/rustyolo-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "sha256:sha256:4139d9307d9577b46181c2a38b1f139393fdb41ad74610e44732045269c25714"  # Calculate with: shasum -a 256 rustyolo-x86_64-unknown-linux-gnu.tar.gz
     end
   end
 
