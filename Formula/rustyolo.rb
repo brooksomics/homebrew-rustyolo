@@ -5,23 +5,23 @@
 class Rustyolo < Formula
   desc "Secure, firewalled wrapper for running AI agents in YOLO mode"
   homepage "https://github.com/brooksomics/llm-rustyolo"
-  version "0.3.1"  # Update this when creating new releases
+  version "0.4.0"  # Update this when creating new releases
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/brooksomics/llm-rustyolo/releases/download/v#{version}/rustyolo-x86_64-apple-darwin.tar.gz"
-      sha256 "036cd605572256345e85c4c47b89ee8e997d979f98a2af7bf5e9af9d8f55f447"  # Calculate with: shasum -a 256 rustyolo-x86_64-apple-darwin.tar.gz
+      sha256 "b523929b80c089a88df4cce2fccf1aa28003262003e9420a16c08a90a20fa27e"  # Calculate with: shasum -a 256 rustyolo-x86_64-apple-darwin.tar.gz
     elsif Hardware::CPU.arm?
       url "https://github.com/brooksomics/llm-rustyolo/releases/download/v#{version}/rustyolo-aarch64-apple-darwin.tar.gz"
-      sha256 "6b9204a636551d5baa85106784358ddc79636b32d114f1f241ef42a5a97d8029"  # Calculate with: shasum -a 256 rustyolo-aarch64-apple-darwin.tar.gz
+      sha256 "bebdf25819f7faf50d49b54ab9c38f5f880f93513709e11b8768452bb3813b08"  # Calculate with: shasum -a 256 rustyolo-aarch64-apple-darwin.tar.gz
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/brooksomics/llm-rustyolo/releases/download/v#{version}/rustyolo-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4139d9307d9577b46181c2a38b1f139393fdb41ad74610e44732045269c25714"  # Calculate with: shasum -a 256 rustyolo-x86_64-unknown-linux-gnu.tar.gz
+      sha256 "c92539e43648424d16e96b4937c906573653e0b83bfe3efb366b6f7e6479dcc0"  # Calculate with: shasum -a 256 rustyolo-x86_64-unknown-linux-gnu.tar.gz
     end
   end
 
