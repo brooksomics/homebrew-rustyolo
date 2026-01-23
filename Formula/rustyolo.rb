@@ -5,7 +5,7 @@
 class Rustyolo < Formula
   desc "Secure, firewalled wrapper for running AI agents in YOLO mode"
   homepage "https://github.com/brooksomics/llm-rustyolo"
-  version "0.5.1"  # Update this when creating new releases
+  version "0.6.0"  # Update this when creating new releases
   license "MIT"
 
   on_macos do
