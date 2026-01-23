@@ -11,17 +11,17 @@ class Rustyolo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/brooksomics/llm-rustyolo/releases/download/v#{version}/rustyolo-x86_64-apple-darwin.tar.gz"
-      sha256 "sha256:d15b84336d005c17cdc000ec982c92bb497137955cbd92e2f10c055556557e55"  # Calculate with: shasum -a 256 rustyolo-x86_64-apple-darwin.tar.gz
+      sha256 "sha256:63318b52fdf973c3c7f81673119e49c0d6d50d4fe2f68daaa9076e7f5cbc30a3"  # Calculate with: shasum -a 256 rustyolo-x86_64-apple-darwin.tar.gz
     elsif Hardware::CPU.arm?
       url "https://github.com/brooksomics/llm-rustyolo/releases/download/v#{version}/rustyolo-aarch64-apple-darwin.tar.gz"
-      sha256 "sha256:9207d8c633612e2cad57933215ec5fa76167a352f84f36e1557ff2c5ea808a90"  # Calculate with: shasum -a 256 rustyolo-aarch64-apple-darwin.tar.gz
+      sha256 "sha256:026fc1ac643de34e699b3aae919f4cca75efd7fcf030940d3a93f18e723cd874"  # Calculate with: shasum -a 256 rustyolo-aarch64-apple-darwin.tar.gz
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/brooksomics/llm-rustyolo/releases/download/v#{version}/rustyolo-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "sha256:37651a0abbf9d86b9c819702d504055a5de1fe610c55597aafb05f1788f31cf5"  # Calculate with: shasum -a 256 rustyolo-x86_64-unknown-linux-gnu.tar.gz
+      sha256 "sha256:66ca29a8d8a48ebdac314c772438c2b0b36f55adb54ac9b06aa1f3d3ae9b1089"  # Calculate with: shasum -a 256 rustyolo-x86_64-unknown-linux-gnu.tar.gz
     end
   end
 
